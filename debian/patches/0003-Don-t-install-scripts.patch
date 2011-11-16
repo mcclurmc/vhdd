@@ -1,0 +1,23 @@
+From: Mike McClurg <mike.mcclurg@citrix.com>
+Date: Wed, 16 Nov 2011 18:04:46 +0000
+Subject: Don't install scripts
+
+Signed-off-by: Mike McClurg <mike.mcclurg@citrix.com>
+---
+ Makefile |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 87e8d0d..e1222c5 100644
+--- a/Makefile
++++ b/Makefile
+@@ -12,7 +12,7 @@ vhdd :
+ install : vhdd
+ 	make -C vhd install
+ 	make -C vcli install
+-	make -C scripts install
++	#make -C scripts install
+ 
+ clean : 
+ 	make -C smapi clean
+-- 

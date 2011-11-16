@@ -1,19 +1,17 @@
---- a/vhd/Makefile
-+++ b/vhd/Makefile
-@@ -71,8 +71,8 @@
- 	$(OCAMLOPT) $(COMPFLAG) $(LINKFLAG) -o $@ $(OBJS)
- 
- install : vhdd
--	mkdir -p $(DESTDIR)/opt/xensource/libexec
--	cp vhdd $(DESTDIR)/opt/xensource/libexec
-+	mkdir -p $(DESTDIR)/usr/sbin
-+	cp vhdd $(DESTDIR)/usr/sbin
- 
- .SUFFIXES: .ml .mli .cmo .cmi .cmx
- 
+From: Jon Ludlam <jonathan.ludlam@eu.citrix.com>
+Date: Wed, 16 Nov 2011 18:03:05 +0000
+Subject: install-location
+
+---
+ vcli/Makefile |   12 +++---------
+ vhd/Makefile  |    4 ++--
+ 2 files changed, 5 insertions(+), 11 deletions(-)
+
+diff --git a/vcli/Makefile b/vcli/Makefile
+index 97df28f..11ce562 100644
 --- a/vcli/Makefile
 +++ b/vcli/Makefile
-@@ -75,15 +75,9 @@
+@@ -75,15 +75,9 @@ clean :
  	rm -f *.cmx *.cmi *.cmo *.a *.o vcli *~ *.annot
  
  install : vcli
@@ -32,3 +30,19 @@
 -	cd $(DESTDIR)/var/xapi/sm/ &&	ln -s ../../../opt/xensource/libexec/attach_from_config_cli ./lvmSR
  
  
+diff --git a/vhd/Makefile b/vhd/Makefile
+index e0afaec..a0dbaa4 100644
+--- a/vhd/Makefile
++++ b/vhd/Makefile
+@@ -71,8 +71,8 @@ vhdd : $(OBJS)
+ 	$(OCAMLOPT) $(COMPFLAG) $(LINKFLAG) -o $@ $(OBJS)
+ 
+ install : vhdd
+-	mkdir -p $(DESTDIR)/opt/xensource/libexec
+-	cp vhdd $(DESTDIR)/opt/xensource/libexec
++	mkdir -p $(DESTDIR)/usr/sbin
++	cp vhdd $(DESTDIR)/usr/sbin
+ 
+ .SUFFIXES: .ml .mli .cmo .cmi .cmx
+ 
+-- 
