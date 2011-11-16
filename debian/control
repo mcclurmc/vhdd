@@ -1,0 +1,20 @@
+Source: vhdd
+Section: libs
+Priority: extra
+Maintainer: Jon Ludlam <jonathan.ludlam@eu.citrix.com>
+Build-Depends: debhelper (>= 8.0.0), ocaml-nox, camlp4, camlp4-extra, libxcp-ocaml-dev, libxenapi-ocaml-dev, ocaml-findlib, libxmlm-ocaml-dev, libxen-dev , libtype-conv-camlp4-dev, uuid-dev, libdevmapper-dev, libxen-ocaml-4.1, libxen-ocaml-dev
+Standards-Version: 3.9.2
+Homepage: http://www.xen.org/XCP
+#Vcs-Git: git://git.debian.org/collab-maint/vhdd.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/vhdd.git;a=summary
+
+Package: vhdd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: vhdd-doc
+Architecture: all
+Description: documentation for vhdd
+ <insert long description, indented with spaces>
