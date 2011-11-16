@@ -1,6 +1,7 @@
 vhdd for Debian
 ---------------
 
-<possible notes regarding this package - if none, delete this file>
+Slight modifications from upstream to install a subset of functionality into
+the correct locations.
 
- -- Jon Ludlam <jonathan.ludlam@eu.citrix.com>  Mon, 11 Jul 2011 17:13:38 +0100
+ -- Mike McClurg <mike.mcclurg@citrix.com> Wed, 15 Nov 2011 17:13:38 +0000
