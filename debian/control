@@ -18,8 +18,3 @@ Description: Daemon for managing VHD-based SRs for XCP
  .
  vhdd is a daemon for managing XCP Storage Repositories based on the
  VHD (Virtual Hard Disk) format.
-
-Package: vhdd-doc
-Architecture: all
-Description: documentation for vhdd
- <insert long description, indented with spaces>
