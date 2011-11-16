@@ -4,15 +4,20 @@ Priority: extra
 Maintainer: Jon Ludlam <jonathan.ludlam@eu.citrix.com>
 Build-Depends: debhelper (>= 8.0.0), ocaml-nox, camlp4, camlp4-extra, libxcp-ocaml-dev, libxenapi-ocaml-dev, ocaml-findlib, libxmlm-ocaml-dev, libxen-dev , libtype-conv-camlp4-dev, uuid-dev, libdevmapper-dev, libxen-ocaml-4.1, libxen-ocaml-dev
 Standards-Version: 3.9.2
-Homepage: http://www.xen.org/XCP
-#Vcs-Git: git://git.debian.org/collab-maint/vhdd.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/vhdd.git;a=summary
+Homepage: http://xen.org/products/cloudxen.html
+Vcs-Git: http://xen.org/products/cloudxen.html
+Vcs-Browser: https://github.com/mcclurmc/vhdd/
 
 Package: vhdd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Daemon for managing VHD-based SRs for XCP
+ The Xen Cloud Platform (XCP) is an open source enterprise-ready server
+ virtualization and cloud computing platform, delivering the Xen Hypervisor
+ with support for a range of guest operating systems.
+ .
+ vhdd is a daemon for managing XCP Storage Repositories based on the
+ VHD (Virtual Hard Disk) format.
 
 Package: vhdd-doc
 Architecture: all
